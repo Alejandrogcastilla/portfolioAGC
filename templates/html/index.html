@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro García Castilla</title>
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <link href='https://css.gg/terminal.css' rel='stylesheet'>
+    <link href='https://css.gg/link.css' rel='stylesheet'>
+    <link href='https://css.gg/database.css' rel='stylesheet'>
+    <link href='https://css.gg/code-slash.css' rel='stylesheet'>
+    <link href='https://css.gg/bot.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1583594189.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="{% static "img/logo-2.png" %}" class="logo">-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Tecnologías</a></li>
+                <li><a href="#portfolio">Mis Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <!--<p>Ingeniero de Software - Big Data</p>-->
+            <h1><span>Alejandro García Castilla,</span><br>Ingeniero de Software - Big Data</h1>
+        </div>
+    </div>
+</div>
+
+        <!------------------------About----------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="{% static "img/Perfil.png" %}">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre mi</h1>
+                <br>
+                <p>
+                    Si has llegado hasta aquí significa que quieres saber más sobre mí. Quien soy, mis motivaciones o simplemente tienes curiosidad.
+                    <br><br>
+                    Soy Alejandro Raúl y vivo en Madrid. Durante estos últimos 4 años me he formado en ingeniería de software,
+                    especializándome en el mundo del dato, donde he encontrado mi vocación y la rama del software en la que quiero crecer.
+                    <br><br>
+                    Como desarrollador creo en el potencial de las ideas, el impacto que llegan a tener y su alcance en un mundo tan conectado
+                    como en el que vivimos y para darle vida a esas ideas es necesario creatividad, conocimiento, entusiasmo y constancia, cualidades que aporto a los proyectos en los que me involucro para obtener los mejores resultados.
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Educación</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiencia Laboral</p>
+                    <p class="tab-links" onclick="opentab('skills')">Idiomas</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span><b>2018-2022 U-TAD, CENTRO UNIVERSITARIO DE TECNOLOGÍA Y ARTE DIGITAL</b></span><br>Ingeniero de Software, mención en Big Data</li>
+                        <li><span><b>2016-2018 UNIVERSIDAD POLITÉCNICA DE MADRID</b></span><br>Estudiante de Ingeniería de Minas</li>
+                        <li><span><b>2013-2014 SOUTH GRANDVILLE HIGH SCHOOL OF INTEGRATED TECHNOLOGY & LEADERSHIP</b></span><br>Carolina del Norte (EEUU)</li>
+                        <br>
+                        <li><span><b>Programa Explorer: </b></span><br>Desarrollo de Ideas de Negocio para jóvenes emprendedores. Santander X y Ayuntamiento de las Rozas-Madrid.</li>
+                        <li><span><b>Título Oficial de Radiofonista para Drones</b></span><br>Cinetic (Aeropuerto Cuatro Vientos).</li>
+                        <li><span><b>Título Oficial de Piloto de Drones</b></span><br>Cinetic (Aeropuerto Cuatro Vientos).</li>
+                        <li><span><b>Practitioner en Programación Neurolingüistica (PNL)</b></span><br>Talent Institute.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><b>2021-2022 NTT DATA - Analista de Datos</b></span><br><b>Proyecto SIREC (Banco Santander): </b>
+                        Desarrollo de procesos Spark-Scala, análisis funcional, creación de pruebas unitarias, generación de documentación
+                        y aplicación de metodologías CI/CD.</li>
+                        <li><span><b>2015-2022 CARBONELL COMUNICACIÓN - Agencia de Publicidad</b></span><br>Coordinador/Animador de eventos.</li>
+                        <li><span><b>Profesor particular</b></span><br>Profesor particular de Matemáticas e Inglés a estudiantes de la E.S.O y
+                        Bachillerato.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span><b>Español</b></span><br>Nativo</li>
+                        <li><span><b>Inglés</b></span></span><br>Nivel C1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------ Tecnologías ----------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Tecnologías</h1>
+        <div class="services-list">
+            <div>
+                <i class="gg-terminal"></i>
+                <h2>Lenguajes de programación</h2>
+                <p>C, C++, Python, R, Scala, Ensamblador, Java, Bash.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+
+            <div>
+                <i class="gg-database"></i>
+                <h2>Bases de datos</h2>
+                <p>SQL, MongoDB, Neo4j, Redis, Hive.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+
+            <div>
+                <i class="gg-code-slash"></i>
+                <h2>Desarrollo web</h2>
+                <p>HTML, CSS, JavaScript, Flask, Django, React.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+
+            <div>
+                <i class="gg-bot"></i>
+                <h2>Herramientas</h2>
+                <p>Github, Docker, Machine Learning, Visión por computador, Spark, OpenCV, Tensorflow, Keras, Cloud Computing.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------ Portfolio ----------------- -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mis proyectos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="{% static "img/trabajo-1.jpg" %}">
+                <div class="layer">
+                    <h3><b>Prevención de Contaminación</b></h3>
+                    <p>Proyecto que implementa un modelo basado en series temporales para
+                        predecir el Índice de Calidad del Aire de una estación de medición del Ayuntamiento de
+                        Madrid, junto a una herramienta de visualización de los datos históricos.
+                    </p>
+                    <br>
+                    <p>Selenium, Influxdb, Prophet, Series Temporales, LSTM, Pandas, Numpy, GCP.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static "img/trabajo-2.png" %}">
+                <div class="layer">
+                    <h3>La escalabilidad y sus ventajas en el desarrollo de aplicaciones web</h3>
+                    <p>Desarrollo de dos aplicaciones web que comparten la misma estructura y funcionalidades,
+                    desarrolladas de forma distinta, siendo no escalable y la segunda aplica técnicas de
+                        escalado para tener un mayor rendimiento. El objetivo es comparar su rendimiento, demostrando
+                    las ventajas de un desarrollo modularizado y con mejor arquitectura.
+                    </p>
+                    <br>
+                    <p>Python, Django, Django Rest Framework, React, Postman, Apache JMeter, PostgreSQL, GCP.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static "img/trabajo-4.jpg" %}">
+                <div class="layer">
+                    <h3>Twitter Sentiment Analysis</h3>
+                    <p>Proyecto de extracción de datos de la API de Twitter en español, creación de un pipeline
+                    para la traducción de los mensajes para aplicar un sentiment analysis y la clasificación y
+                        almacenamiento de los tweets según la opinión de un hashtag.
+                    </p>
+                    <br>
+                    <p>Python, Pyspark, SQL, Requests, API, Minería de datos.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn">See More</a>-->
+
+    </div>
+</div>
+
+
+<!------------------------ Contact ----------------- -->
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacto</h1>
+                <p><i class="fa-solid fa-envelope"></i> alexgarciacastilla@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 674 124 127</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/alejandro-garc%C3%ADa-castilla-1b485521b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <!--<a href=""><i class="fa-solid fa-envelope"></i></a> -->
+                    <!--<a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                </div>
+                <a href="{% static "files/CV_ALEJANDRO GARCÍA CASTILLA_ES.pdf" %}" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    {{form}}
+                    <button class="btn btn2" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy Alejandro. Hecho con <i class="fa-sharp fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</body>
+</html>
+
